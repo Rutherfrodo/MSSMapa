@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AplikacjaTestowa</string>
+    <string name="ButtonTEST1">TEST1</string>
+    <string name="ButtonTEST2">TEST2</string>
+    <string name="Button1Tekst">Przycisk pierwszy</string>
+    <string name="Button2Tekst">Przycisk drugi</string>
+    <string name="Snack">SnackbarTest</string>
+</resources>
