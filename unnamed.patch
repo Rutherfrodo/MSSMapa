@@ -1,0 +1,21 @@
+Index: app/src/main/java/com/example/frodo/aplikacjatestowa/ButtonClass.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/frodo/aplikacjatestowa/ButtonClass.java	(date 1530732274000)
++++ app/src/main/java/com/example/frodo/aplikacjatestowa/ButtonClass.java	(date 1530732274000)
+@@ -0,0 +1,13 @@
++package com.example.frodo.aplikacjatestowa;
++
++import android.view.View;
++
++
++
++public class ButtonClass implements View.OnClickListener {
++    @Override
++    public void onClick(View v) {
++
++
++    }
++}
