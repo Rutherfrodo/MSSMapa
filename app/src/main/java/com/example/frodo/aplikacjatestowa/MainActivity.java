@@ -46,39 +46,39 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         switch (PunktID) {
             case 0:
                 PunktNaMapie(52.27600748536289, 20.93560432406821, "Tutaj mieszkam ja!", googleMap);
-                mapaTextView.setText(" To tutaj mieszkam \n Moja wspaniała norka");
+                mapaTextView.setText("To tutaj mieszkam, moja wspaniała norka");
                 break;
             case 1:
                PunktNaMapie(50.221744768411334, 18.67082302651943, "Knurów", googleMap);
-                mapaTextView.setText(" Tam gdzieś, \n mieszka Ona, \n dziewczyna w kebabie urodzona");
+                mapaTextView.setText("Tam gdzieś, mieszka Ona, dziewczyna w kebabie urodzona");
                 break;
             case 2:
                 PunktNaMapie(50.26262313230343, 19.023603145527204, "Ławeczka", googleMap);
-                mapaTextView.setText(" Nasza pierwsza ławka! \n pierwsze frisbee \n oraz posiadówka ;)");
+                mapaTextView.setText("Nasza pierwsza ławka! Pierwsze frisbee oraz posiadówka ;)");
                 break;
             case 3:
                 PunktNaMapie(50.25581364549814, 19.014651677698907, "Ciekawsza ławeczka", googleMap);
-                mapaTextView.setText(" A tutaj na ławce \n Monika oszalała!");
+                mapaTextView.setText("A tutaj na ławce Monika oszalała!");
                 break;
             case 4:
                 PunktNaMapie(52.22884101560918, 21.003273725509644, "Dworzec Centralny", googleMap);
-                mapaTextView.setText(" Nasze miejsce spotkań i \n pożegnań :(");
+                mapaTextView.setText("Nasze miejsce spotkań i pożegnań :(");
                 break;
             case 5:
                 PunktNaMapie(52.23248600014032, 21.01985285310775, "KEBAB KING", googleMap);
-                mapaTextView.setText(" W tym kebabie \n odzyskałaś radość z \n jedzenia kebabów!");
+                mapaTextView.setText("W tym kebabie odzyskałaś radość z jedzenia kebabów!");
                 break;
             case 6:
                 PunktNaMapie(52.22970318214281, 20.999372683984234, "Nocleg", googleMap);
-                mapaTextView.setText(" Tutaj znowu przy Tobie \n oszalałem ja!");
+                mapaTextView.setText("Tutaj znowu przy Tobie oszalałem ja!");
                 break;
             case 7:
                 PunktNaMapie(52.24185711340347, 21.028722524642944, "Kopernik", googleMap);
-                mapaTextView.setText(" Spacer po rozpalonym dahu \n nie należał do najprzyjemniejszych :D");
+                mapaTextView.setText("Spacer po rozpalonym dachu nie należał do najprzyjemniejszych :D");
                 break;
             case 8:
                 PunktNaMapie(52.24185711340347, 21.028722524642944, "Coral", googleMap);
-                mapaTextView.setText(" Tutaj uciekłaś!\n");
+                mapaTextView.setText("Tutaj uciekłaś!");
                 break;
             case 9:
                 PunktNaMapie(52.27600748536289, 20.93560432406821, "Dom", googleMap);
