@@ -80,10 +80,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 PunktNaMapie(52.24185711340347, 21.028722524642944, "Coral", googleMap);
                 mapaTextView.setText(" Tutaj uciekłaś!\n");
                 break;
-            case 9:
-                PunktNaMapie(52.24185711340347, 21.028722524642944, "Coral", googleMap);
-                mapaTextView.setText(" Tutaj uciekłaś!\n");
-                break;
             default:
 
                 break;
