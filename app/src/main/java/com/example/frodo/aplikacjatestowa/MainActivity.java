@@ -71,14 +71,18 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapaTextView = (TextView) findViewById(R.id.mapaTextView);
 
     }
-    protected void PunktNaMapie(double latitude, double longtitude , String Nazwa, GoogleMap googleMap) { // Funkcja odpowiedzialna za tworzenie punktu na mapie, z okreslonym opisem oraz współrzędnymi
+    protected void PunktNaMapie (double latitude, double longtitude , String Nazwa, GoogleMap googleMap) { // Funkcja odpowiedzialna za tworzenie punktu na mapie, z okreslonym opisem oraz współrzędnymi
         LatLng miejsd = new LatLng(latitude,longtitude);
         googleMap.addMarker(new MarkerOptions().position(miejsd).title(Nazwa));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(miejsd));
         PunktID++;
        // googleMap.moveCamera(CameraUpdateFactory.zoomBy(9));
     }
-
+    /*
+    NastępnyNaMapie odpowiada za deklaracje kolejnych puntków na mapie, wraz z opisem w TXT
+    Punkty w oddzielnych CASE
+    TODO: W PunktNaMapie dodać objekt LatLng jako parametr
+     */
     public void NastepnyNaMapie(final GoogleMap googleMap){
         switch (PunktID) {
             case 0:
@@ -110,8 +114,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 mapaTextView.setText(" Tutaj znowu przy Tobie \n oszalałem ja!");
                 break;
             case 7:
-                PunktNaMapie(52.22970318214281, 20.999372683984234, "Nocleg", googleMap);
-                mapaTextView.setText(" Tutaj znowu przy Tobie \n oszalałem ja!");
+                PunktNaMapie(52.24185711340347, 21.028722524642944, "Kopernik", googleMap);
+                mapaTextView.setText(" Spacer po rozpalonym dahu \n nie należał do najprzyjemniejszych :D");
+                break;
+            case 8:
+                PunktNaMapie(52.24185711340347, 21.028722524642944, "Coral", googleMap);
+                mapaTextView.setText(" Tutaj uciekłaś!\n");
                 break;
             default:
 
