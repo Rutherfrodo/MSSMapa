@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     NastępnyNaMapie odpowiada za deklaracje kolejnych puntków na mapie, wraz z opisem w TXT
     Punkty w oddzielnych CASE
     TODO: W PunktNaMapie dodać objekt LatLng jako parametr
-
      */
     public void NastepnyNaMapie(final GoogleMap googleMap){
         switch (PunktID) {
