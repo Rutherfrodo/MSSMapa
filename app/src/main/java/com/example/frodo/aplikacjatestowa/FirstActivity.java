@@ -31,8 +31,13 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
         Animation animation;
-        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.move);
+        animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.sequential);
+        animation.setRepeatCount(5);
         LayoutButton.startAnimation(animation);
+        animation.setRepeatCount(5);
+
+
+
     }
 
     /*
