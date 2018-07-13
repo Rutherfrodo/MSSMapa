@@ -33,6 +33,7 @@ public class WycieczkiClass extends AppCompatActivity implements OnMapReadyCallb
             @Override
             public void onMapClick(LatLng latLng) {
                 NaMapie sciana = new NaMapie(latLng);
+                sciana.setGdzies(latLng);
                 sciana.setName("To Jest Ściana");
                 googleMap.addMarker(new MarkerOptions().position(sciana.getGdzies()).title(sciana.getNazwaPunktu()));
 
