@@ -32,6 +32,11 @@
                 <category android:name="android.intent.category.APP_MAPS"/>
             </intent-filter>
         </activity>
+        <activity android:name=".WycieczkiClass">
+            <intent-filter>
+                <category android:name="android.intent.category.APP_MAPS"/>
+            </intent-filter>
+        </activity>
 
     </application>
 
