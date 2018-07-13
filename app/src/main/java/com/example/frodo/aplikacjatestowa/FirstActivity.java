@@ -15,6 +15,7 @@ public class FirstActivity extends AppCompatActivity {
 
     LinearLayout mLinearLayout;
     private Button LayoutButton;
+    private Button WycieczkaButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,14 @@ public class FirstActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mLinearLayout = new LinearLayout(this);
         LayoutButton = (Button) findViewById(R.id.button5);
+        WycieczkaButton = (Button) findViewById(R.id.button);
+
+        WycieczkaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ZmianaLayoutDwa();
+            }
+        });
 
 
         LayoutButton.setOnClickListener(new View.OnClickListener() {
@@ -47,5 +56,10 @@ public class FirstActivity extends AppCompatActivity {
         Intent intent = new Intent(this, com.example.frodo.aplikacjatestowa.MainActivity.class);
         finish();
         startActivity(intent);
+    }
+    public void ZmianaLayoutDwa(){
+        Intent intentcik = new Intent(this,com.example.frodo.aplikacjatestowa.WycieczkiClass.class);
+        finish();
+        startActivity(intentcik);
     }
 }
