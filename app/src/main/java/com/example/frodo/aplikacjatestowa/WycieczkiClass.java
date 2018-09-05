@@ -41,6 +41,9 @@ public class WycieczkiClass extends AppCompatActivity implements OnMapReadyCallb
         });
 
     }
-
+    /*
+    TODO: Zapisywanie punktów do pliku
+    TODO: Odczytywanuie punktów z pliku
+     */
 }
 
