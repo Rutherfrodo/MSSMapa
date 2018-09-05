@@ -1,5 +1,6 @@
 package com.example.frodo.aplikacjatestowa;
 
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Button mapaButton;
     private TextView mapaTextView;
     public  int PunktID = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapFragment.getMapAsync(this);
         mapaButton = (Button)  findViewById(R.id.ButtonMapaNextPunkt);
         mapaTextView = (TextView) findViewById(R.id.mapaTextView);
+        mapaTextView.setText("Zaczynamy zabawę!");
+
 
     }
     protected void PunktNaMapie (double latitude, double longtitude , String Nazwa, GoogleMap googleMap) { // Funkcja odpowiedzialna za tworzenie punktu na mapie, z okreslonym opisem oraz współrzędnymi
@@ -39,8 +43,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     /*
     NastępnyNaMapie odpowiada za deklaracje kolejnych puntków na mapie, wraz z opisem w TXT
     Punkty w oddzielnych CASE
-    TODO: W PunktNaMapie dodać objekt LatLng jako parametr
      */
+
     public void NastepnyNaMapie(final GoogleMap googleMap){
         switch (PunktID) {
             case 0:
@@ -53,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 break;
             case 2:
                 PunktNaMapie(50.26262313230343, 19.023603145527204, "Ławeczka", googleMap);
-                mapaTextView.setText("Nasza pierwsza ławka! Pierwsze frisbee oraz posiadówka ;)");
+                mapaTextView.setText("Nasza pierwsza ławka! Pierwsze frisbee oraz posiadówka ");
                 break;
             case 3:
                 PunktNaMapie(50.25581364549814, 19.014651677698907, "Ciekawsza ławeczka", googleMap);
@@ -80,8 +84,16 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 mapaTextView.setText("Tutaj uciekłaś!");
                 break;
             case 9:
-                PunktNaMapie(52.27600748536289, 20.93560432406821, "Dom", googleMap);
-                mapaTextView.setText(" ");
+                PunktNaMapie(50.216163, 18.658845, "Dom", googleMap);
+                mapaTextView.setText("Bułeczkowy dom");
+                break;
+            case 10:
+                PunktNaMapie(50.25752867947887, 19.02665073300909, "Dom", googleMap);
+                mapaTextView.setText("Bar Malinowy! ;)");
+                break;
+            case 11:
+                PunktNaMapie(52.247021018667425, 21.014237037486396, "Dom", googleMap);
+                mapaTextView.setText("Ławka warszawska, tutaj Buła została pokochana ");
                 break;
             default:
 
@@ -98,23 +110,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
            public void onClick(View v) {
                     NastepnyNaMapie(googleMap);
                }
-
-
        });
-
     }
-
     /*public void TrzeciButtonHandler(View view) { // Schemat do Toast
       Toast tost =  Toast.makeText(getApplicationContext(),"Fajny toast",Toast.LENGTH_SHORT);
       tost.show();
-
-
     }
 
     public void SnackmeHandler(View view) { // Schemat do SnackBara
         Snackbar.make(findViewById(myCoordLayout), R.string.Snack, Snackbar.LENGTH_SHORT).show();
     }*/
-
-
 }
 
