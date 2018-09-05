@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="25dp"
-    android:background="@color/colorAccent">
+    android:background="@drawable/foto1">
+
 
     <Button
         android:id="@+id/button"
